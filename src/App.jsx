@@ -22,24 +22,55 @@ export default function App() {
 }
 
 function Navbar() {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
+  const handleNavbarClick = () => {
+    setIsContentVisible(true);
+  };
+
+  const handleExitClick = () => {
+    setIsContentVisible(false);
+  };
   return (
     <div className="navbar">
       <img className="navbar-content" src=" https://www.floraison.in/wp-content/uploads/2020/09/floraison-logo.svg" />
+
       <div className="navbar-btn">
-        <Button color="inherit" endIcon={<MenuIcon />}>
+
+        <Button color="inherit" onClick={handleNavbarClick} endIcon={<MenuIcon />}>
+
           Menu
         </Button>
+        <div className="menu-content-div">
+          <div className="menu-content">
+            {isContentVisible && (
+              <section className="menu-content-sec">
+                <Button color="error" onClick={handleExitClick}>X</Button>
+                <a href="#">Home</a>
+                <a href="#">Our Company</a>
+                <a href="#">Our Leadership</a>
+                <a href="#">Our Execution</a>
+                <a href="#">Local Expertise</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Research Center</a>
+                <a href="#">Contact Us</a>
+              </section>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
 }
+
+
 
 function Content() {
   return (
     <div>
       <div className="parent">
         <div className="image-container">
-          <img className="image" src="./image.jpg" />
+          <img className="image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNEcc_nZDUTEm00IFalf8_cXBoATeArtMCQ0dWzRleaLISxrNC" />
         </div>
         <div className="btns">
           <a href="#" className="btn-content">India Entry Stratergy</a>
