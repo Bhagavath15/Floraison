@@ -1,0 +1,332 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----- Navbar -----*/
+
+.navbar {
+  /* padding: 10px; */
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden
+}
+
+.navbar-content {
+  width: 130px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-btn {
+  width: 400px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/*-----content-----*/
+.image-container {
+  /* position: absolute;
+  z-index: 1; */
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image {
+
+  width: 100%;
+  height: 400px;
+  object-fit: cover
+}
+
+.parent {
+  position: relative
+}
+
+.btns {
+  margin-top: -30px;
+  /* position: absolute;
+  z-index: 2; */
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.btn-content {
+  width: 200px;
+  padding: 10px;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white
+}
+
+.btns a:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+
+.gateway {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2px;
+}
+
+.gateway h2 {
+  font-size: 40px;
+}
+
+
+
+.container {
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap: 70px */
+}
+
+.container-content {
+  padding: 20px;
+  margin: 40px;
+}
+
+.container-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.container-content a:hover {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.container img {
+  width: 614px;
+  height: 100%;
+  object-fit: fill;
+}
+
+.service-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5px;
+}
+
+.service-content h2 {
+  margin: 40px;
+  font-size: 25px;
+}
+
+.service-content p {
+  margin: 13px;
+  font-size: 15px;
+}
+
+.cardDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-content :hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.bookflex {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.book-scroll {
+  width: 100%;
+  overflow: hidden;
+}
+
+.book-container {
+  width: 255px;
+  height: 300px;
+  gap: 10px;
+  display: flex;
+  transition-property: transform;
+  white-space: nowrap;
+}
+
+.book {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.book img {
+  width: 55px;
+  height: auto;
+}
+
+.book-content {
+  margin-top: 10px;
+  margin-left: auto;
+  line-height: 7px;
+}
+
+.book-title {
+  font-size: 15px;
+  margin-left: 100px
+}
+
+.book-subtitle {
+  font-size: 12px;
+  margin-left: 140px
+}
+
+.book-div {
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.book-div-color {
+  width: 50px;
+  height: 100%;
+  background-color: green;
+}
+
+.world-img {
+  height: 50px
+}
+
+.book-div-img {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.book-div-imgflex {
+
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.book-container:hover {
+  cursor: pointer
+}
+
+.grass-bg {
+  margin-top: 50px;
+  width: 100%;
+  height: 350px;
+  background-image: url("https://thumbs.dreamstime.com/b/fresh-green-grass-background-sunny-summer-day-fresh-green-grass-background-sunny-summer-day-park-125152255.jpg");
+}
+
+.grass-bg-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  line-height: 10px;
+}
+
+.grass-bg-btn {
+  color: black
+}
+
+/*-----Bottom Nav-----*/
+.bottom {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  color: white;
+}
+
+.bottomNav {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.bottomNav h3 {
+  font-size: 20px;
+}
+
+.bottomNav-contact {
+  width: 340px;
+  line-height: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bottomNav-content {
+  width: 280px;
+  line-height: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bottomNav-content a {
+  text-decoration: none;
+  color: white;
+  line-height: 25px
+}
+
+
+.bottomNav-content a:hover {
+  color: grey
+}
+
+.copyright {
+  margin-left: 15px;
+
+  font-size: 14px
+}
