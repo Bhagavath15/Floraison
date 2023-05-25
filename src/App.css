@@ -7,6 +7,7 @@ body {
 
 .navbar {
   /* padding: 10px; */
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
@@ -14,8 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
-  overflow: hidden
+  z-index: 1
 }
 
 .navbar-content {
@@ -36,16 +36,16 @@ body {
 }
 
 /*-----content-----*/
-.image-container {
-  /* position: absolute;
-  z-index: 1; */
+/* .image-container {
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: 400px;
-  overflow: hidden;
-}
+} */
 
 .image {
 
+  margin-top: 90px;
   width: 100%;
   height: 400px;
   object-fit: cover
