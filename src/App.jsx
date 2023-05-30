@@ -43,6 +43,7 @@ function Navbar() {
         </Button>
         <div className="menu-content-div">
           <div className="menu-content">
+            //conditional rendering
             {isContentVisible && (
               <section className="menu-content-sec">
                 <Button color="error" onClick={handleExitClick}>X</Button>
@@ -247,7 +248,7 @@ const BookScroll = ({ books, scrollDuration }) => {
     const timeout = setTimeout(() => {
       // Increment the book index to scroll to the next book
       setCurrentBookIndex((prevIndex) =>
-        prevIndex === books.length - 1 ? 0 : prevIndex + 1
+        prevIndex === books.length - 3 ? 0 : prevIndex + 1
       );
     }, scrollDuration);
 
