@@ -41,9 +41,10 @@ function Navbar() {
 
           Menu
         </Button>
+
         <div className="menu-content-div">
           <div className="menu-content">
-            //conditional rendering
+
             {isContentVisible && (
               <section className="menu-content-sec">
                 <Button color="error" onClick={handleExitClick}>X</Button>
