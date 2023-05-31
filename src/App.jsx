@@ -224,7 +224,7 @@ function Cards({ cardDetail }) {
   )
 }
 
-const Book = () => {
+function Book() {
   const books = [
     { image: 'https://www.floraison.in/wp-content/uploads/2020/09/floraison-logo.svg', title: 'SMALL BUSINESS', subtitle: 'Support' },
     { image: 'https://www.floraison.in/wp-content/uploads/2020/09/floraison-logo.svg', title: 'INDIA ENTRY', subtitle: 'Stratergies' },
@@ -242,7 +242,7 @@ const Book = () => {
     </div>
   );
 };
-const BookScroll = ({ books, scrollDuration }) => {
+function BookScroll({ books, scrollDuration }) {
   const [currentBookIndex, setCurrentBookIndex] = useState(0);
 
   useEffect(() => {
